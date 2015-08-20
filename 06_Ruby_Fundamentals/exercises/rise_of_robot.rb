@@ -7,18 +7,23 @@
 #class is never plural
 #name in class should always be capitalized
 
+
 require 'pry'
 require 'pry-byebug'
 
 class Robot
+
   #creates getter and setter methods for each attribute
   attr_accessor :name, :type, :origin #explain getter/ setter
 
 #this method creates new instances of the robot class
 #instance variables are available throughout the class
 #@name is an instance variable; can live in most methods within the class
+#creates getter && setter methods for each attribute
+attr_accessor :name, :type, :origin
   def initialize(name, type, origin) #only job to create robots.
-    @name = name
+
+
     @type = type
     @origin = origin
   end
@@ -79,3 +84,10 @@ end
 
 #to call a class.. starts with class name
 Robot.make_robots(10)
+=======
+    "I have laser fighting skills" unless type != "Android"
+  end
+end
+
+Robot.make_robots(50)
+>>>>>>> 89c25edcc1ed8916b234629b588ffa6fce5edab6
